@@ -60,6 +60,9 @@ class MyAdapter extends RecyclerView.Adapter {
     }
 
     private CellData[] data =new CellData[]{new CellData("瑞兹","我掌控雷电,谁人不服!"),
+            new CellData("辛吉德","我摇啊摇啊摇,饮用之前要摇一摇!"),new CellData("瑞兹","我掌控雷电,谁人不服!"),
+            new CellData("辛吉德","我摇啊摇啊摇,饮用之前要摇一摇!"),new CellData("瑞兹","我掌控雷电,谁人不服!"),
+            new CellData("辛吉德","我摇啊摇啊摇,饮用之前要摇一摇!"),new CellData("瑞兹","我掌控雷电,谁人不服!"),
             new CellData("辛吉德","我摇啊摇啊摇,饮用之前要摇一摇!")};
 
     //假数据

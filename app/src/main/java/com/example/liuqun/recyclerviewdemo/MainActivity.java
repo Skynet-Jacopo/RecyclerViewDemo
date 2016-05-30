@@ -2,6 +2,7 @@ package com.example.liuqun.recyclerviewdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -18,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(rv);//关联vh
 
         //设置RecyclerView的布局,这里使用LinearLayout
-        rv.setLayoutManager(new LinearLayoutManager(this));
+//        rv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager
+//                .HORIZONTAL,false));
+
+        rv.setLayoutManager(new GridLayoutManager(this,4,LinearLayoutManager
+                .HORIZONTAL,false));
 
         //填充内容 使用Adapter
         rv.setAdapter(new MyAdapter());
